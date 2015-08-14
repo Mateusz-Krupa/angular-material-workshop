@@ -3,18 +3,39 @@
 
   angular
     .module('angularMaterialCodepot')
-    .config(config);
+    .config(config)
+    .config(function($mdThemingProvider) {
+
+//Palette Options
+      //red
+      //pink
+      //purple
+      //deep-purple
+      //indigo
+      //blue
+      //light-blue
+      //cyan
+      //teal
+      //green
+      //light-green
+      //lime
+      //yellow
+      //amber
+      //orange
+      //deep-orange
+      //brown
+      //grey
+      //blue-grey
+
+      $mdThemingProvider.theme('default')
+        .primaryPalette('indigo')
+        .accentPalette('pink');
+    });
 
   /** @ngInject */
   function config($logProvider, toastr) {
     // Enable log
     $logProvider.debugEnabled(true);
-
-    // Set options third-party lib
-    toastr.options.timeOut = 3000;
-    toastr.options.positionClass = 'toast-top-right';
-    toastr.options.preventDuplicates = true;
-    toastr.options.progressBar = true;
   }
 
 })();

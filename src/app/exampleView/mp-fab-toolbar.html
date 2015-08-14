@@ -1,0 +1,33 @@
+<header layout-fill ng-controller="MainMenu as ctrl" class="header">
+  <md-fab-toolbar md-open="ctrl.isOpen" count="ctrl.count" ng-class="ctrl.selectedAlignment">
+    <md-fab-trigger class="align-with-text">
+      <md-button aria-label="menu" class="md-fab md-primary">
+        <md-icon md-font-set="material-icons">menu</md-icon>
+      </md-button>
+    </md-fab-trigger>
+    <md-toolbar>
+      <md-fab-actions class="md-toolbar-tools">
+        <md-button aria-label="comment" class="md-icon-button">
+          <md-icon md-font-set="material-icons">info</md-icon>
+          <md-tooltip>
+            Information
+          </md-tooltip>
+        </md-button>
+        <md-button aria-label="label" class="md-icon-button">
+          <md-icon md-font-set="material-icons">mail</md-icon>
+          <md-tooltip>
+            Contact
+          </md-tooltip>
+        </md-button>
+        <md-button aria-label="photo" class="md-icon-button">
+          <md-icon md-font-set="material-icons">work</md-icon>
+          <md-tooltip>
+            My work
+          </md-tooltip>
+        </md-button>
+      </md-fab-actions>
+    </md-toolbar>
+  </md-fab-toolbar>
+  <h1 class="md-display-2 header-title md-accent">Jan Kowalski</h1>
+  <p class="md-display-1 header-title md-accent">Silny czlowiek</p>
+</header>
