@@ -11,18 +11,17 @@
     MainController.prototype.openRegistration = function(ev){
 
       this.$mdDialog.show({
-        //controller: DialogController,
+        controller: 'DialogueController',
+        controllerAs: 'dialog',
         templateUrl: 'app/main/templates/form.html',
         parent: angular.element(document.body),
         targetEvent: ev
-      })
-        .then(function(answer) {
+      }).then(function(answer) {
 
-        }, function() {
+      }, function() {
 
-        });
+      });
     };
-
 
     return MainController;
   })();

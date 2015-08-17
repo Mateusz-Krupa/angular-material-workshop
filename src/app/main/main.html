@@ -14,13 +14,26 @@
 
   <section class="info">
     <h3 class="info-header md-title">About</h3>
-    <div class="info-container"  layout="row">
-      <div flex="50" class="info-block">100% workshop technology conference taking place at the end of summer, August
+    <div class="info-container"  layout="column" layout-gt-md="row">
+
+      <!--flex-order	Sets element order.
+        flex-order-sm	Sets element order on devices less than 600px wide.
+        flex-order-gt-sm	Sets element order on devices greater than 600px wide.
+        flex-order-md	Sets element order on devices between 600px and 960px wide.
+        flex-order-gt-md	Sets element order on devices greater than 960px wide.
+        flex-order-lg	Sets element order on devices between 960px and 1200px wide.
+        flex-order-gt-lg	Sets element order on devices greater than 1200px wide.
+      -->
+
+      <div flex class="info-block">
+
+        100% workshop technology conference taking place at the end of summer, August
         28-29th, 2015 at the
         University of Social Sciences and Humanities in Warsaw, Poland. If you believe in learning by doing approach and
         are thirsty for knowledge and networking this event is for you!
+
       </div>
-      <div flex="50" class="info-block m-right">There will be multiple hands-on sessions on software development, devops
+      <div flex class="info-block">There will be multiple hands-on sessions on software development, devops
         tools, product design, IoT
         and hardware renaissance, agile practices and many, many more. Instead of just talking about great new tools -
         Codepot will show you how to actually use them.
@@ -28,50 +41,7 @@
     </div>
   </section>
   <section>
-    <md-list layout="row" class="additional-info" flex="80" offset="10">
-      <md-list-item>
-        <md-button>
-          <md-icon md-font-icon="material-icons">
-            audiotrack
-          </md-icon>
-          <p>
-            2
-            days
-          </p>
-        </md-button>
-      </md-list-item>
-      <md-list-item>
-        <md-button>
-          <md-icon md-font-icon="material-icons">
-            audiotrack
-          </md-icon>
-          <p>
-            72
-            workshops
-          </p>
-        </md-button>
-      </md-list-item>
-      <md-list-item>
-        <md-button>
-          <md-icon md-font-icon="material-icons">
-            audiotrack
-          </md-icon>
-          <p>
-            48
-            technical workshops
-          </p>
-        </md-button>
-      </md-list-item>
-      <md-list-item>
-        <md-button>
-          <md-icon md-font-icon="material-icons">
-            audiotrack
-          </md-icon>
-          <p>24
-            soft-skills sessions</p>
-        </md-button>
-      </md-list-item>
-    </md-list>
+
   </section>
 
 </md-content>

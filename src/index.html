@@ -29,11 +29,12 @@
 <![endif]-->
 
 <md-toolbar layout="row">
+
   <p>Angular Material</p>
 </md-toolbar>
 
 <section layout="row" flex>
-  <md-sidenav md-component-id="left" md-is-locked-open="true" class="md-whiteframe-z2">
+  <md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-z2">
     <md-subheader class="md-no-sticky">TUTORS</md-subheader>
     <md-list>
       <md-list-item class="md-2-line contact-item">

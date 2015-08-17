@@ -33,7 +33,7 @@
     });
 
   /** @ngInject */
-  function config($logProvider, toastr) {
+  function config($logProvider) {
     // Enable log
     $logProvider.debugEnabled(true);
   }

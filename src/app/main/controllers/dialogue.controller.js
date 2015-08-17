@@ -1,20 +1,27 @@
-angular.module('angularMaterialCodepot').controller('DemoCtrl', function($scope) {
-  $scope.user = {
-    title: 'Developer',
-    email: 'ipsum@lorem.com',
-    firstName: '',
-    lastName: '' ,
-    company: 'Google' ,
-    address: '1600 Amphitheatre Pkwy' ,
-    city: 'Mountain View' ,
-    state: 'CA' ,
-    biography: 'Loves kittens, snowboarding, and can type at 130 WPM.\n\nAnd rumor has it she bouldered up Castle Craig!',
-    postalCode : '94043'
-  };
-})
-  .config( function($mdThemingProvider){
-    // Configure a dark theme with primary foreground yellow
-    $mdThemingProvider.theme('docs-dark', 'default')
-      .primaryPalette('yellow')
-      .dark();
-  });
+(function () {
+  'use strict';
+
+  var DialogueController = (function () {
+
+    DialogueController.$inject = ['$mdDialog', '$scope'];
+    function DialogueController($mdDialog, $scope) {
+      this.$mdDialog = $mdDialog;
+      this.$scope = $scope;
+    }
+
+    DialogueController.prototype.submit = function(ev){
+      this.$mdDialog.hide();
+    };
+
+    DialogueController.prototype.cancel = function(ev){
+      this.$mdDialog.hide();
+    };
+
+    DialogueController.prototype.close = function(ev){
+      this.$mdDialog.hide();
+    };
+
+    return DialogueController;
+  })();
+  angular.module('angularMaterialCodepot').controller('DialogueController',DialogueController);
+})();
