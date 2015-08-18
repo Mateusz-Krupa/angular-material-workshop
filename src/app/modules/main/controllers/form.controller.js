@@ -6,14 +6,13 @@
     function FormController() {
       this.user = {
         title: 'Developer',
-        email: 'ipsum@lorem.com',
-        firstName: '',
-        lastName: '' ,
-        company: 'Google' ,
-        address: '1600 Amphitheatre Pkwy' ,
-        city: 'Mountain View' ,
-        state: 'CA' ,
-        biography: 'Loves kittens, snowboarding, and can type at 130 WPM.\n\nAnd rumor has it she bouldered up Castle Craig!',
+        email: 'someone@wp.pl',
+        firstName: 'Andrzej',
+        lastName: 'Grzegorczyk' ,
+        company: ' x ' ,
+        address: 'Rusinska 19' ,
+        city: 'Warszawa' ,
+        state: 'mazowieckie' ,
         postalCode : '94043'
       }
 
