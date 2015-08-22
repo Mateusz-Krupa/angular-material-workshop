@@ -10,7 +10,7 @@
       </div>
     </md-toolbar>
     <md-dialog-content>
-      <div ng-controller="FormController as ctrl"  layout="column">
+      <div ng-controller="FormCtrl as ctrl"  layout="column">
         <md-content layout-padding>
             <div layout layout-sm="column">
               <md-input-container style="width:80%">
@@ -54,7 +54,7 @@
             </div>
     </md-dialog-content>
     <div class="md-actions" layout="row">
-      <md-button ng-click="dialog.submit()">
+      <md-button ng-click="dialog.submit()" class="md-accent md-raised">
         Submit
       </md-button>
       <md-button ng-click="dialog.cancel()">
