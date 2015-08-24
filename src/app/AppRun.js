@@ -1,6 +1,5 @@
 (function() {
   'use strict';
-
   angular
     .module('angularMaterialCodepot')
     .run(runBlock);
@@ -9,5 +8,4 @@
   function runBlock() {
 
   }
-
 })();
