@@ -9,7 +9,7 @@
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/modules/main/main.html',
+        templateUrl: 'app/modules/main/templates/main.html',
         controller: 'MainCtrl',
         controllerAs: 'view'
       });
