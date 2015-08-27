@@ -3,8 +3,8 @@
 
   angular
     .module('angularMaterialCodepot')
-    .config(config)
-    .config(function($mdThemingProvider) {
+    //TODO include $mdThemingProvider
+    .config(function() {
 
 //Palette Options
       //red
@@ -27,20 +27,8 @@
       //grey
       //blue-grey
 
-      $mdThemingProvider.theme('default')
-        .primaryPalette('indigo')
-        .accentPalette('pink');
+      //TODO use $mdThemingProvider and create your palette of colors :)
 
-      $mdThemingProvider.theme('secondTheme')
-        .primaryPalette('yellow')
-        .dark();
     });
-
-  /** @ngInject */
-  function config($logProvider) {
-    // Enable log
-    $logProvider.debugEnabled(true);
-  }
-
 
 })();

@@ -3,25 +3,28 @@
 
   var DialogueCtrl = (function () {
 
-    DialogueCtrl.$inject = ['$mdDialog', '$scope'];
-    function DialogueCtrl($mdDialog, $scope) {
-      this.$mdDialog = $mdDialog;
-      this.$scope = $scope;
+    //TODO inject for dependencies '$mdDialog'
+    DialogueCtrl.$inject = [''];
+    function DialogueCtrl() {
+
     }
 
+    //TODO create dialogue submit function for example hide the dialogue :) or something
     DialogueCtrl.prototype.submit = function(ev){
-      this.$mdDialog.hide();
+
     };
 
+    //TODO create cancel function for dialogue
     DialogueCtrl.prototype.cancel = function(ev){
-      this.$mdDialog.hide();
     };
 
+    //TODO create close function for dialogue
     DialogueCtrl.prototype.close = function(ev){
-      this.$mdDialog.hide();
+
     };
 
     return DialogueCtrl;
   })();
+
   angular.module('angularMaterialCodepot').controller('DialogueCtrl',DialogueCtrl);
 })();

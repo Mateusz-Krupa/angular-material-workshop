@@ -3,10 +3,10 @@
 
   var IndexCtrl = (function () {
 
-    IndexCtrl.$inject = ['$mdSidenav', '$http'];
+    //TODO inject for dependencies '$mdSidenav'
+    IndexCtrl.$inject = ['$http'];
 
-    function IndexCtrl($mdSidenav, $http) {
-      this.$mdSidenav = $mdSidenav;
+    function IndexCtrl($http) {
       this.$http = $http;
       this.tutors = [];
       this.getTutors();
@@ -16,12 +16,12 @@
       var _this = this;
       this.$http.get("assets/data/tutors.json").then(function(res){
         _this.tutors = res.data;
-        console.log(_this.tutors);
       })
     };
 
+    //TODO Add toggleMenu function :) try to use this.$mdSidenav('left')
     IndexCtrl.prototype.toggleMenu = function(){
-      this.$mdSidenav('left').toggle();
+
     };
 
     return IndexCtrl;

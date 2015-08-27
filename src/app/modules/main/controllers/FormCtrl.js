@@ -4,18 +4,9 @@
   var FormCtrl = (function () {
     FormController.$inject = [];
     function FormController() {
+      //TODO add some data for customer based on the form.html
       this.user = {
-        title: 'Developer',
-        email: 'someone@wp.pl',
-        firstName: 'Andrzej',
-        lastName: 'Grzegorczyk' ,
-        company: ' x ' ,
-        address: 'Rusinska 19' ,
-        city: 'Warszawa' ,
-        state: 'mazowieckie' ,
-        postalCode : '94043'
       };
-
     }
     return FormController;
   })();

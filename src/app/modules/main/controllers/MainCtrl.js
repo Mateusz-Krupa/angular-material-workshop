@@ -3,24 +3,13 @@
 
   var MainCtrl = (function () {
 
-    MainCtrl.$inject = ['$mdDialog'];
-    function MainCtrl($mdDialog) {
-      this.$mdDialog = $mdDialog;
+    //TODO include dependencies $mdDialog
+    MainCtrl.$inject = [];
+    function MainCtrl() {
     }
 
     MainCtrl.prototype.openRegistration = function(ev){
-
-      this.$mdDialog.show({
-        controller: 'DialogueCtrl',
-        controllerAs: 'dialog',
-        templateUrl: 'app/modules/main/templates/form.html',
-        parent: angular.element(document.body),
-        targetEvent: ev
-      }).then(function(answer) {
-
-      }, function() {
-
-      });
+      //TODO open dialogue when user clicks on registration btn templateUrl: 'app/modules/main/templates/form.html'
     };
 
     return MainCtrl;
