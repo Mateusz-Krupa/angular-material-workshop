@@ -76,13 +76,8 @@ md-sidenav  md-list {
   padding: 0px 0px 8px 0px;
 }
 
-.page-title{
-  padding: 0 15px;
-}
-
 .btn-login{
   height: 36px;
   right: 10px;
   top: 10px;
 }
-
