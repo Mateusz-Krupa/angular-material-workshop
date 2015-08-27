@@ -43,6 +43,6 @@ gulp.task('watch', ['inject'], function () {
     setTimeout( function(){
     browserSync.reload(e.path);
     browserSync.reload({ stream: true });}
-    ,1500);
+    ,2000);
   });
 });
