@@ -5,7 +5,7 @@
     .config(routeConfig);
 
   /** @ngInject */
-  function routeConfig($stateProvider, $urlRouterProvider) {
+  function routeConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -13,7 +13,7 @@
         controller: 'MainCtrl',
         controllerAs: 'view'
       });
-
+    $locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise('/');
   }
 
