@@ -14,7 +14,7 @@
     };
 
     DialogueCtrl.prototype.cancel = function(ev){
-      this.$mdDialog.hide();
+      this.$mdDialog.cancel();
     };
 
     DialogueCtrl.prototype.close = function(ev){
